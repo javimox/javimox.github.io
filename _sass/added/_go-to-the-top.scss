@@ -1,0 +1,39 @@
+#totheTop {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#totheTop::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+
+#totheTop:hover {
+  cursor: pointer;
+  background-color: darken($background-color, 10%);
+}
+
+#totheTop:active {
+  background-color: #555;
+}
+
+#totheTop.show {
+  opacity: 1;
+  visibility: visible;
+}
