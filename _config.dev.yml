@@ -33,7 +33,6 @@ algolia:
     - excluded-file.html
     - _posts/2017-11-28-post-exclude-search.md
     - _drafts/*.md
-    - **/*.tmp.html
 
 # SEO Related
 google_site_verification : 3uYX0hRu60WvgxAjONUjpayiXQOe1Knenbr0s-gpgk0
