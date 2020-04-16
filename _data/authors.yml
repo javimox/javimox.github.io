@@ -1,0 +1,15 @@
+# Authors
+
+Billy Rick:
+  name        : "jmox"
+  bio         : "I am `$(whoami)`.<br />About myself, I can say:<br />`lslogins \\`<br />`--noheadings \\`<br />`-o=GECOS -l $(whoami)`"
+  avatar      : "/assets/images/bio-photo.png"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:jmox@protonmail.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://mox.sh"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/javimox"
