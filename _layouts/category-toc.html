@@ -1,0 +1,54 @@
+---
+layout: archive-toc
+---
+
+{{ content }}
+
+{% assign counter_pages = '0' %}
+{%- for p in site.pages -%}
+  {%- unless p.hidden -%}
+    {%- if p.categories contains page.taxonomy and p.url !=  page.url -%}
+      {% capture counter_pages %}{{ counter_pages | plus:'1' }}{% endcapture %}
+    {%- endif -%}
+  {%- endunless -%}
+{%- endfor -%}
+
+<ul class="taxonomy__index">
+  <li>
+    <a href="#posts">
+      <strong>Posts</strong> <span class="taxonomy__count">{{ site.categories[page.taxonomy] | size }}</span>
+    </a>
+  </li>
+  <li>
+    <a href="#pages">
+      <strong>Pages</strong> <span class="taxonomy__count">{{ counter_pages }}</span>
+    </a>
+  </li>
+</ul>
+<section id="posts" class="taxonomy__section">
+  <h2 class="archive__subtitle"><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Posts</h2>
+  <div class="entries-{{ page.entries_layout | default: 'list' }}">
+  {%- for p in site.posts -%}
+    {%- unless p.hidden -%}
+      {%- if p.categories contains page.taxonomy and p.url !=  page.url -%}
+        {%- include menu-categories.html -%}
+      {%- endif -%}
+    {%- endunless -%}
+  {%- endfor -%}
+  </div>
+  <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+</section>
+
+<section id="pages" class="taxonomy__section">
+  <h2 class="archive__subtitle"><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Pages</h2>
+  <div class="entries-{{ page.entries_layout | default: 'list' }}">
+  {%- for p in site.pages -%}
+    {%- unless p.hidden -%}
+      {%- if p.categories contains page.taxonomy and p.url !=  page.url -%}
+        {% include menu-categories.html %}
+      {%- endif -%}
+    {%- endunless -%}
+  {%- endfor -%}
+  </div>
+  <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+</section>
