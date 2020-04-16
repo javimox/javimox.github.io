@@ -1,0 +1,205 @@
+## global config
+theme                    : minimal-mistakes-jekyll
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Site Settings
+locale                   : "en"
+title                    : "jmox blog"
+title_separator          : "|"
+name                     : "jmox"
+description              : "Blog about Linux, DevOps, Security, etc."
+url                      : "https://mox.sh"
+repository               : # "javimox/javimox.github.io"
+masthead_title           : "jmox blog"
+breadcrumbs              : true
+words_per_minute         : 200
+comments:
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "utterances", "custom"
+  disqus:
+    shortname            : "jmox"
+atom_feed:
+  path                   : # blank (default) uses feed.xml
+search                   : true # true, false (default)
+search_full_content      : true # true, false (default)
+search_provider          : "lunr"
+algolia:
+  application_id         : "O8SG8MN4LE"
+  index_name             : "dev_MOXSH"
+  search_only_api_key    : "79e49dd8462d985072847bab4a8c1e31"
+  powered_by             : true
+
+# SEO Related
+google_site_verification : 3uYX0hRu60WvgxAjONUjpayiXQOe1Knenbr0s-gpgk0
+bing_site_verification   :
+yandex_site_verification :
+
+# Social Sharing
+twitter:
+  username               : ""
+og_image                 : "/assets/images/bio-photo.png"
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type                   : # Person or Organization (defaults to Person)
+  name                   : # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles
+    - https://github.com/javimox
+
+# Analytics
+analytics:
+  provider               : google # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          : UA-163407120-1
+
+# Site Author
+author:
+  name             : "jmox"
+  avatar           : "/assets/images/bio-photo.png"
+  bio              : "I am `$(whoami)`.<br />About myself, I can say:<br />`lslogins \\`<br />`--noheadings \\`<br />`-o=GECOS -l $(whoami)`"
+  location         : "$HOME"
+  links:
+    - label: "E-mail"
+      icon: "fas fa-fw fa-at"
+      url: "mailto:jmox@protonmail.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/javimox"
+
+# Site Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/javimox"
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README
+  - tmp
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Liquid
+strict_front_matter: true
+liquid:
+  error_mode: strict
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Scripts
+after_footer_scripts:
+  - /assets/js/go-to-the-top.js
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 3 # amount of posts to show
+paginate_path: /page:num/
+timezone: Europe/Berlin
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# HTML Compression
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+# Collections # _category dir
+collections:
+  category:
+    output: true
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _category
+  - scope:
+      path: ""
+      type: category
+    values:
+      layout: "category-toc"
