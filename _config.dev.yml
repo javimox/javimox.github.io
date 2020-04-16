@@ -27,6 +27,13 @@ algolia:
   index_name             : "dev_MOXSH"
   search_only_api_key    : "79e49dd8462d985072847bab4a8c1e31"
   powered_by             : true
+  files_to_exclude: # exclude files from indexing
+    - index.html
+    - index.md
+    - excluded-file.html
+    - _posts/2017-11-28-post-exclude-search.md
+    - _drafts/*.md
+    - **/*.tmp.html
 
 # SEO Related
 google_site_verification : 3uYX0hRu60WvgxAjONUjpayiXQOe1Knenbr0s-gpgk0
