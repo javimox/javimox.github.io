@@ -3,7 +3,7 @@ title:  "Exclude Post from Search Index"
 search: false
 categories: 
   - misc
-last_modified_at: 2018-02-19T08:05:34-05:00
+last_modified_at: 2020-04-18T00:54:53+02:00
 ---
 
 This is a test that should not appear in the search index because it has the following YAML Front Matter
@@ -27,3 +27,5 @@ algolia:
     - _posts/2017-11-28-post-exclude-search.md
     - subdirectory/*.html
 ```
+
+Date generated using: `date --iso-8601=seconds`
