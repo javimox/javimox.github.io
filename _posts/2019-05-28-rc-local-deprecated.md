@@ -2,7 +2,7 @@
 title:  "rc.local deprecated"
 toc: true
 categories: 
-  - Linux
+  - linux
 tags:
   - systemd
   - buster
