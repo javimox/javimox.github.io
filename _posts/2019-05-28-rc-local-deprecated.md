@@ -1,5 +1,5 @@
 ---
-title:  "mox helm repository goes live"
+title:  "rc.local deprecated"
 toc: true
 categories: 
   - Linux
