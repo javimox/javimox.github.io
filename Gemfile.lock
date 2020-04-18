@@ -265,7 +265,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll-algolia
+  jekyll-algolia (~> 1.0)
   jekyll-include-cache
 
 BUNDLED WITH
