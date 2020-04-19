@@ -2,10 +2,10 @@
 title:  "rc.local deprecated"
 toc: true
 categories: 
-  - linux
+  - misc
 tags:
   - systemd
-  - buster
+  - debian
   - rc.local
   - bluethoot
 last_modified_at: 2019-05-28T18:22:36+02:00
