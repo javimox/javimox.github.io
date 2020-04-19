@@ -44,7 +44,7 @@ These are the agents in the mail flow process:
 
 ### <a name="mua"></a>Mail User Agent (MUA)
 
-**MUA** or **Mail User Agent** is basically the **Mail client** that we install in our desktops. It allows us to read, write, answer, and dispose (for example: delete or archive) the e-mails. It also use the standard rules of composing an e-mail, including fields as **From** and others, and manage attachments ''MIME'' (Multipurpose Internet Mail Extensions).
+**MUA** or **Mail User Agent** is basically the **Mail client** that we install in our desktops. It allows us to read, write, answer, and dispose (for example: delete or archive) the e-mails. It also use the standard rules of composing an e-mail, including fields as **From** and others, and manage attachments MIME (Multipurpose Internet Mail Extensions).
 
 Examples of MUA are:
 * mail (for BSD and others)
@@ -54,7 +54,7 @@ Examples of MUA are:
 
 ### <a name="msa"></a>Mail Submission Agent (MSA)
 
-**MSA** or **Mail Submission Agent** stands between the **MUA** and the **MTA** in a mail system. It acts as a sort of "receptionist" (**port 587**) for messages coming in to a mail system from MUAs.
+**MSA** or **Mail Submission Agent** stands between the **MUA** and the **MTA** in a mail system. It acts as a sort of _receptionist_ (**port 587**) for messages coming in to a mail system from MUAs.
 
 It does error checking and verification (such as verifying that hostnames are FQDNs, checking the legitimacy of local hostnames before appending the local domain portion, fixing headers, etc.) before passing the message off to the **MTA** for transmission.
 
@@ -63,7 +63,7 @@ The **MSA** and the **MTA** are usually hosted on the same SMTP server, as the M
 They also are relatively new. Prior to their existence, all this work was handled by the MTA. See [RFC 2476](https://tools.ietf.org/html/rfc6409).
 
 Examples of MSA are:
-* dovecot (see [Dovecot Submission](https://doc.dovecot.org/admin_manual/submission_server/)
+* dovecot (see [Dovecot Submission](https://doc.dovecot.org/admin_manual/submission_server/))
 * postfix
 
 ### <a name="mta"></a>Mail Transfer Agent (MTA)
