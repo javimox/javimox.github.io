@@ -52,21 +52,10 @@ Some Mail Transfer Agents (MTA) will deliver messages directly to local mailboxe
 
 ## <a name="references"></a>References
 
-* [RFC 1939](http://www.faqs.org/rfcs/rfc1939.html), which describes POP3.
 * [RFC 2060](http://www.faqs.org/rfcs/rfc2060.html), which describes IMAP.
-* [RFC 2476](http://www.faqs.org/rfcs/rfc2476.html), which describes the role of an MSA.
-* [RFC 2821](http://www.faqs.org/rfcs/rfc2821.html), which describes SMTP.
-* [Sendmail](http://www.sendmail.org/), the oldest Unix MTA.
-* [Qmail](http://www.qmail.org/), another MTA.
-* [Postfix](http://www.postfix.org/), another MTA.
-* [Exim](http://www.exim.org/), another MTA.
-* [Procmail](http://www.procmail.org/), a popular MDA for use with sendmail, or for filtering messages.
-* [Fetchmail](http://catb.org/~esr/fetchmail/), a POP3/IMAP client that retrieves e-mail from another host and then delivers it to SMTP (or procmail) on the localhost.
 * [Teoría del correo (Spanish)](https://cursosasir.files.wordpress.com/2014/06/teoria_correo.pdf)
 * [How E-Mail works](https://howto.lintel.in/how-does-email-work/)
 * [An Introduction to Internet E-Mail](http://wooledge.org/~greg/mail.html)
-* [Fastmail Docs: SSL, TLS, and STARTTLS](https://www.fastmail.com/help/technical/ssltlsstarttls.html)
-* [Postfix Docs: TLS](http://www.postfix.org/TLS_README.html)
 
 Jump to [Mail I: Agents](/sysadmin/mail-i-service-elements/)
 
