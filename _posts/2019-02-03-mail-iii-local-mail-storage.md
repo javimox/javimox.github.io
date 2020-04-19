@@ -26,7 +26,7 @@ Mail is stored in one of four different formats:
 
 ### MBOX
 
-The **mbox format** is the most common. In this format, all messages are stored in one gigantic file, which is usually ''/var/spool/mail/USERNAME''. Other common locations include `/var/mail/USERNAME` and `/usr/spool/mail/USERNAME`. The environment variable `$MAIL` should contain the full path to the mailbox.  
+The **mbox format** is the most common. In this format, all messages are stored in one gigantic file, which is usually `/var/spool/mail/USERNAME`. Other common locations include `/var/mail/USERNAME` and `/usr/spool/mail/USERNAME`. The environment variable `$MAIL` should contain the full path to the mailbox.  
 
 Messages inside an **mbox** are delimited by the 5-byte string "`From `" (note the trailing space) at the beginning of a line.  
 
