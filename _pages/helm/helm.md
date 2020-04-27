@@ -29,13 +29,13 @@ $ helm install my-release mox/<chart>
 
 `master` supports Helm 3 only, i. e. both `v1` and `v2` [API version](https://helm.sh/docs/topics/charts/#the-apiversion-field) charts are installable.
 
-Helm Charts of `mox` repository available on:
- * https://helm.mox.sh
- * https://hub.helm.sh/charts/mox/
- * https://artifacthub.io/packages/search?page=1&repo=mox
+Helm Charts of `mox` repository are available on:
+ * [helm.mox.sh](https://helm.mox.sh)
+ * [hub.helm.sh](https://hub.helm.sh/charts/mox/jira-software)
+ * [artifacthub.io](https://artifacthub.io/package/chart/mox/jira-software)
  
 If you find any errors, feel free to open an issue on:
- * https://github.com/javimox/helm-charts/tree/master
+ * [my GitHub](https://github.com/javimox/helm-charts/tree/master)
 
 ## Chart Sources
 
