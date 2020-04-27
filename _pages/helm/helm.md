@@ -3,6 +3,7 @@ title: "mox helm repository"
 excerpt: "mox helm repository homepage"
 permalink: /helm/
 date: 2020-04-17T23:54:20+02:00
+last_modified_at: 2020-04-28T00:21:27+02:00
 toc: true
 categories:
   - devops
@@ -28,9 +29,15 @@ $ helm install my-release mox/<chart>
 
 `master` supports Helm 3 only, i. e. both `v1` and `v2` [API version](https://helm.sh/docs/topics/charts/#the-apiversion-field) charts are installable.
 
+Helm Charts of `mox` repository available on:
+ * https://helm.mox.sh
+ * https://hub.helm.sh/charts/mox/
+ * https://artifacthub.io/packages/search?page=1&repo=mox
+
 ## Chart Sources
 
 * [charts/confluence-server](/helm/charts/confluence-server): Atlassian Confluence Server chart
+* [charts/jira-software](/helm/charts/jira-software): Atlassian Jira Software chart
 
 ## How mox repo works
 
