@@ -33,9 +33,9 @@ $ helm install my-release mox/jira-software
 This chart bootstraps a [Jira Software](https://hub.docker.com/r/atlassian/jira-software/) deployment on a [Kubernetes](http://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 It is available on:
- * https://helm.mox.sh
- * https://hub.helm.sh/charts/mox/jira-software
- * https://artifacthub.io/package/chart/mox/jira-software
+ * [helm.mox.sh](https://helm.mox.sh)
+ * [hub.helm.sh](https://hub.helm.sh/charts/mox/jira-software)
+ * [artifacthub.io](https://artifacthub.io/package/chart/mox/jira-software)
 
 ## Prerequisites
 
@@ -235,6 +235,8 @@ It is possible to remove an existing Jira database while deploying. Useful if, e
 **Use with caution:**
 
 If `databaseDrop.enabled` is set to `true` and `databaseDrop.dropIt` is set to `yes`, then removes the database specified on `databaseConnection.database`, if it exists.
+
+## <a name="values_values-prod-diff"></a>Difference between values and values-production
 
 ```console
 --- jira-software/values.yaml
