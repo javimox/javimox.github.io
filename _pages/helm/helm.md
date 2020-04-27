@@ -34,8 +34,7 @@ Helm Charts of `mox` repository are available on:
  * [hub.helm.sh](https://hub.helm.sh/charts/mox/jira-software)
  * [artifacthub.io](https://artifacthub.io/package/chart/mox/jira-software)
  
-If you find any errors, feel free to open an issue on:
- * [my GitHub](https://github.com/javimox/helm-charts/tree/master)
+If you find any errors, feel free to open an issue on [my GitHub](https://github.com/javimox/helm-charts/tree/master).
 
 ## Chart Sources
 
