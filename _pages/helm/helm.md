@@ -33,6 +33,9 @@ Helm Charts of `mox` repository available on:
  * https://helm.mox.sh
  * https://hub.helm.sh/charts/mox/
  * https://artifacthub.io/packages/search?page=1&repo=mox
+ 
+If you find any errors, feel free to open an issue on:
+ * https://github.com/javimox/helm-charts/tree/master
 
 ## Chart Sources
 

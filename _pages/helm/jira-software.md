@@ -183,7 +183,7 @@ The following tables lists the configurable parameters of the Jira Software char
 | `postgresql.image.pullPolicy`                 | PostgreSQL image pull policy                                                                                                                                              | `IfNotPresent`                                                |
 | `postgresql.fullnameOverride`                 | String to fully override postgresql.fullname template with a string                                                                                                       | `jira-software-db`                                            |
 | `postgresql.persistence.size`                 | PVC Storage Request for PostgreSQL volume                                                                                                                                 | `8Gi`                                                         |
-| `postgresql.initdbScriptsConfigMap`           | ConfigMap with the initdb scripts (Note: Overrides initdbScripts). The value is evaluated as a template.                                                                  | `{{ .Release.Name }}-db-helper-cm`                            |
+| `postgresql.initdbScriptsConfigMap`           | ConfigMap with the initdb scripts (Note: Overrides initdbScripts). The value is evaluated as a template.                                                                  | {% raw %}`{{ .Release.Name }}-db-helper-cm`{% endraw %}       |
 | `databaseConnection.host`                     | Hostname of the database server (Note: values-production uses the anchor of `vaultSecrets.host`.                                                                          | `jira-software-db`                                            |
 | `databaseConnection.user`                     | Jira database user (Note: values-production uses the anchor of `vaultSecrets.user`)                                                                                       | `jirauser`                                                    |
 | `databaseConnection.password`                 | Jira database password (Note: values-production uses the anchor of `vaultSecrets.pw`)                                                                                     | `""`                                                          |
@@ -281,7 +281,7 @@ If `databaseDrop.enabled` is set to `true` and `databaseDrop.dropIt` is set to `
 +    size: 20Gi
  
    initdbScriptsConfigMap: |-
-     {{ .Release.Name }}-db-helper-cm
+     {% raw %}{{ .Release.Name }}{% endraw %}-db-helper-cm
 @@ -229,20 +229,21 @@
  ## Aliases disabled, not using vaultSecrets anchors.
  databaseConnection:

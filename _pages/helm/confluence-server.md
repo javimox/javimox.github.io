@@ -317,7 +317,7 @@ $ helm upgrade --install my-release \
 +  #   size: 8Gi
  
    initdbScriptsConfigMap: |-
-     {{ .Release.Name }}-db-helper-cm
+     {% raw %}{{ .Release.Name }}{% endraw %}-db-helper-cm
 @@ -243,23 +243,23 @@
  ## If vaultSecrets.enabled is false, replace values below in plaintext,
  ## password will be send to externaldb-secrets
