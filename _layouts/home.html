@@ -6,10 +6,20 @@ layout: archive
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
-{% for post in site.posts limit:1 %}
-  {% include archive-single.html %}
-{% endfor %}
+{%- for p in site.posts limit:1 %}
+  {% include category-menu.html %}
+{%- endfor %}
 
-{% for post in site.posts offset:1 limit:2 %}
-  {% include archive-single.html %}
-{% endfor %}
+{%- for p in site.posts offset:1 limit:2 %}
+  {% include category-menu.html %}
+{%- endfor %}
+
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Pages" }}</h3>
+
+{%- for p in site.pages limit:1 %}
+  {% include category-menu.html %}
+{%- endfor %}
+
+{%- for p in site.pages offset:1 limit:2 %}
+  {% include category-menu.html %}
+{%- endfor %}
