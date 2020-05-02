@@ -1,6 +1,6 @@
 ---
 title: SysAdmin
-permalink: /category/devops/
+permalink: /category/sysadmin/
 taxonomy: sysadmin
 author_profile: true
 toc: true
