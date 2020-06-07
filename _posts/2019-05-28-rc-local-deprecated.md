@@ -2,7 +2,7 @@
 title:  "rc.local deprecated"
 toc: true
 categories: 
-  - misc
+  - sysadmin
 tags:
   - systemd
   - debian

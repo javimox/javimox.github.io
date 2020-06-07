@@ -1,7 +1,7 @@
 ---
 title:  "mox helm repository goes live"
 categories: 
-  - devops
+  - sysadmin
 tags:
   - helm
   - kubernetes
