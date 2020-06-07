@@ -6,7 +6,7 @@ date: 2020-04-17T23:54:20+02:00
 last_modified_at: 2020-04-28T00:21:27+02:00
 toc: true
 categories:
-  - devops
+  - sysadmin
 tags:
   - helm
   - kubernetes

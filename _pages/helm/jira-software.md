@@ -5,7 +5,7 @@ permalink: /helm/charts/jira-software/
 date: 2020-04-18T00:28:29+02:00
 classes: wide
 categories:
-  - devops
+  - sysadmin
 tags:
   - jira
   - agile
