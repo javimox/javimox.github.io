@@ -7,12 +7,15 @@ tags:
   - bash_completion
   - scripting
 last_modified_at: 2020-06-24T00:16:29+02:00
+toc: true
 ---
 
 # kommands
 kubernetes common commands without so much typing
 
-![](/assets/images/kommands.gif)
+<figure>
+        <a href="/assets/images/kommands.gif"><img src="/assets/images/kommands.gif"></a>
+</figure>
 
 ## install
 
@@ -22,7 +25,7 @@ kubernetes common commands without so much typing
 > `echo "source ~/.kube/kommands/.kommands" >> ~/.bashrc && source ~/.bashrc`
 
 **zsh**  
- > `echo "source ~/.kube/kommands/.kommands" >> ~/.zshrc && source ~/.zshrc`
+> `echo "source ~/.kube/kommands/.kommands" >> ~/.zshrc && source ~/.zshrc`
 
 ## usage
 
@@ -30,32 +33,32 @@ All the commands below accept as parameter a number or a name. Autocomplete is e
 
 **k**ommands **g**et and their `kubectl` equivalents
 <pre>
-kgpo  ->  kubectl get pods
-kgpvc ->  kubectl get pvc
-kgsvc ->  kubectl get svc
+kgpo  : kubectl get pods
+kgpvc : kubectl get pvc
+kgsvc : kubectl get svc
 </pre>
 
-**k**ommands **d**el:
+**k**ommands **d**el
 <pre>
-kdpo  -> kubectl delete pod
-kdpvc -> kubectl delete pvc
-kdsvc -> kubectl delete svc
+kdpo  : kubectl delete pod
+kdpvc : kubectl delete pvc
+kdsvc : kubectl delete svc
 </pre>
 
-**k**ommand **desc**ribe:
+**k**ommand **desc**ribe
 <pre>
-kdesc -> kubectl describe
+kdesc : kubectl describe
 </pre>
 
-**k**ommand **s**how **co**ntainers:  
-`ksco`  : it returns the name of the containers that run in a specific pod
+**k**ommand **s**how **co**ntainers  
+`ksco`	: it returns the name of the containers that run in a specific pod.
 
-**k**ommand **e**xecute `sh`:  
-`kesh`  : it opens a shell in a specific pod/container
+**k**ommand **e**xecute `sh`  
+`kesh`	: it opens a shell in a specific pod/container.
 
 ## examples
 
-#### get pods and their number
+### get pods and their number
 ```
 $ kgpo 
  0 NAME                 READY   STATUS             RESTARTS   AGE
@@ -64,14 +67,14 @@ $ kgpo
  3 pod-two-containers   2/2     Running            0          83m
 ```
 
-#### get pod number 3
+### get pod number 3
 ```
 $ kgpo 3
  0 NAME                 READY   STATUS             RESTARTS   AGE
  3 pod-two-containers   2/2     Running            0          84m
 ```
 
-#### show containers of the pod number 3
+### show containers of the pod number 3
 ```
 $ ksco 3
  0 NAME
@@ -79,7 +82,7 @@ $ ksco 3
  2 i-am-then-the-second-container
 ```
 
-#### open a shell in a container of a pod using names
+### open a shell in a container of a pod using names
 ```
 $ kesh pod-[TAB] [TAB]
 i-am-the-first-container-in-this-pod  i-am-then-the-second-container
@@ -89,7 +92,7 @@ You are now in pod: pod-two-containers -c i-am-then-the-second-container
 / # 
 ```
 
-#### open a shell in a container of a pod using numbers
+### open a shell in a container of a pod using numbers
 pod number 3 , container number 2
 ```
 $ kesh 3 2
@@ -97,7 +100,7 @@ You are now in pod: pod-two-containers -c i-am-then-the-second-container
 / # 
 ```
 
-#### get persistent volume claims
+### get persistent volume claims
 ```
 $ kgpvc
  0 NAME          STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS       AGE
@@ -105,14 +108,14 @@ $ kgpvc
  2 pvc-1         Bound    pvc-4e902e87-0df7-4c3c-827c-a8c7cfd75fa5   1Gi        RWO            do-block-storage   93m
 ```
 
-#### delete persistent volume claim using its number
+### delete persistent volume claim using its number
 ```
 $ kdpvc 2
 do you want to remove pvc-1 (y/N)? y
 persistentvolumeclaim "pvc-1" deleted
 ```
 
-#### get services
+### get services
 ```
 $ kgsvc
  0 NAME                    TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE
@@ -121,7 +124,7 @@ $ kgsvc
  3 test-app                ClusterIP   10.245.109.229   <none>        8080/TCP         113m
  ```
  
-#### describe service number 3
+### describe service number 3
 ```
 $ kdesc svc 3
 Name:              test-app
@@ -139,5 +142,6 @@ Events:            <none>
 
 ## links
 
-[GPLv3]: https://www.gnu.org/licenses/gpl-3.0.txt
-[kommands]: https://github.com/javimox/kommands
+License: [GPLv3](https://www.gnu.org/licenses/gpl-3.0.txt)  
+GitHub Repo: [kommands](https://github.com/javimox/kommands)  
+
