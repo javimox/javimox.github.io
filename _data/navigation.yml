@@ -13,8 +13,6 @@ main:
         url: /categories/
       - title: by Year
         url: /year-archive/
-  - title: Sitemap
-    url: /sitemap/
 
 # sidebar navigation list sample
 sidebar-main:
