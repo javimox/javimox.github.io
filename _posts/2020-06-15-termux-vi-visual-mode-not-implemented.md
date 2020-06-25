@@ -5,8 +5,8 @@ categories:
 tags:
   - termux
   - vi
-date: 2019-06-15T18:34:10+02:00
-last_modified_at: 2019-06-15T18:35:31+02:00
+date: 2020-06-15T18:34:10+02:00
+last_modified_at: 2020-06-15T18:35:31+02:00
 ---
 
 When using vi on Termux we might have the issue that the visual mode is not implemented.
