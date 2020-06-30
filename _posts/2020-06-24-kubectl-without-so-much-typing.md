@@ -148,6 +148,23 @@ Session Affinity:  None
 Events:            <none>
 ```
 
+### apply manifest
+```
+$ kapp pod-1.yaml
+pod/first-pod created
+```
+
+### show logs of the pod using numbers
+pod number 2 , container number 2
+```
+$ klog 2 2
+You are now showing logs of: pod-two-containers i-am-then-the-second-container
+Fri Jun 26 23:00:04 UTC 2020
+Fri Jun 26 23:00:05 UTC 2020
+Fri Jun 26 23:00:06 UTC 2020
+Fri Jun 26 23:00:07 UTC 2020
+```
+
 ## links
 
 License: [GPLv3](https://www.gnu.org/licenses/gpl-3.0.txt)  
