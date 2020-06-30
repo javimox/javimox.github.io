@@ -53,9 +53,19 @@ kdpvc : kubectl delete pvc
 kdsvc : kubectl delete svc
 </pre>
 
-**k**ommand **desc**ribe
+**k**ommands **app**ly:
 <pre>
-kdesc : kubectl describe
+kapp  -> kubectl apply -f
+</pre>
+
+**k**ommand **desc**ribe:
+<pre>
+kdesc -> kubectl describe
+</pre>
+
+**k**ommands **log**s:
+<pre>
+klog  -> kubectl logs -f
 </pre>
 
 **k**ommand **s**how **co**ntainers  
