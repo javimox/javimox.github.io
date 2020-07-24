@@ -65,16 +65,14 @@ test_router:
 test_transport:
   driver = appendfile
   maildir_format
-  directory = /data/mail/${local_part_data}@${domain_data}
+  directory = /home/mail/${local_part_data}@${domain_data}
 ```
 
 ## Tainted filename for search
 
 That's another possible error that might be encountered after upgrading Exim. This is an example of what can be found in the logs:
 
-```
-Tainted filename for search: '/etc/exim/aliases/mx.example.com' temporarily rejected RCPT <test@example.com>: failed to expand "${if exists{/etc/exim/aliases/$domain}{${lookup{$local_part}lsearch{/etc/exim/aliases/$domain}}}}": NULL
-```
+`Tainted filename for search: '/etc/exim/aliases/mx.example.com' temporarily rejected RCPT <test@example.com>: failed to expand "${if exists{/etc/exim/aliases/$domain}{${lookup{$local_part}lsearch{/etc/exim/aliases/$domain}}}}": NULL`
 
 We have a list lookup: "`domains = `"
 
