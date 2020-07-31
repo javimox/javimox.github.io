@@ -4,13 +4,13 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en"
-title                    : "jmox blog"
+title                    : "mox blog"
 title_separator          : "|"
-name                     : "jmox"
+name                     : "mox"
 description              : "Blog about Linux, DevOps, Security, etc."
 url                      : "https://mox.sh"
 repository               : "javimox/javimox.github.io"
-masthead_title           : "jmox blog"
+masthead_title           : "mox blog"
 breadcrumbs              : true
 words_per_minute         : 200
 comments:
@@ -66,7 +66,7 @@ author:
   links:
     - label: "E-mail"
       icon: "fas fa-fw fa-at"
-      url: "mailto:jmox@protonmail.com"
+      url: "mailto:jmox@pm.me"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/javimox"
