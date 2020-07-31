@@ -138,6 +138,7 @@ kramdown:
 # Scripts
 after_footer_scripts:
   - /assets/js/go-to-the-top.js
+  - /assets/js/cookie-consent.js
 
 # Sass/SCSS
 sass:
