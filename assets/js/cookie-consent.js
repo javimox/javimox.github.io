@@ -10,6 +10,7 @@ window.cookieconsent.initialise({
   },
   "theme": "edgeless",
   "content": {
+    "message": "This website uses cookies to improve user experience.",
     "href": "https://mox.sh/terms"
   }
 });
