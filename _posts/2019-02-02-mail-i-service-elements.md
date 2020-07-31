@@ -1,6 +1,5 @@
 ---
 title:  "Mail I: Agents"
-toc: true
 categories: 
   - sysadmin
 tags:

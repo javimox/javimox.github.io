@@ -1,5 +1,6 @@
 ---
 title:  "mox helm repository goes live"
+toc: false
 categories: 
   - sysadmin
 tags:

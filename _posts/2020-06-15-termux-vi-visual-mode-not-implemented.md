@@ -1,5 +1,6 @@
 ---
 title:  "visual mode not implemented in vi using termux"
+toc: false
 categories:
   - sysadmin
 tags:

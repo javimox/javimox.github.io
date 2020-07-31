@@ -1,6 +1,5 @@
 ---
 title:  "Secure IRC connection to Freenode with Tor and WeeChat"
-toc: true
 categories:
   - sysadmin
 tags:

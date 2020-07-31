@@ -5,7 +5,6 @@ categories:
 tags:
   - exim
 last_modified_at: 2020-07-25T00:16:29+02:00
-toc: true
 ---
 
 After upgrading Exim to 4.94.1 the logs start showing errors regarding tainted filenames and

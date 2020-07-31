@@ -1,6 +1,5 @@
 ---
 title:  "rc.local deprecated"
-toc: true
 categories: 
   - sysadmin
 tags:

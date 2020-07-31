@@ -1,5 +1,6 @@
 ---
 title:  "Michael Servetus"
+toc: false
 categories: 
   - misc
 tags:

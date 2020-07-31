@@ -7,7 +7,6 @@ tags:
   - bash_completion
   - scripting
 last_modified_at: 2020-06-24T00:16:29+02:00
-toc: true
 ---
 
 # kommands

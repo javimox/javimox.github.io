@@ -1,5 +1,6 @@
 ---
 title:  "Exclude Post from Search Index"
+toc: false
 search: false
 categories: 
   - misc
