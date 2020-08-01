@@ -9,17 +9,17 @@
 
 // https://github.com/mmistakes/minimal-mistakes/issues/1219#issuecomment-326809412
 html {
-    font-size: 16px; // originally 16px
+    font-size: 14px; // originally 16px
     @include breakpoint($medium) {
-        font-size: 18px; // originally 18px
+        font-size: 16px; // originally 18px
     }
 
     @include breakpoint($large) {
-        font-size: 20px; // originally 20px
+        font-size: 18px; // originally 20px
     }
 
     @include breakpoint($x-large) {
-        font-size: 22px; // originally 22px
+        font-size: 20px; // originally 22px
     }
 }
 
@@ -30,7 +30,7 @@ kbd,
 samp,
 pre {
   font-family: $monospace;
-  font-size: 0.9em;
+  font-size: 0.9em; // originally 1em
 }
 
 /* body */
@@ -38,16 +38,16 @@ pre {
   p,
   li,
   dl {
-    font-size: 0.9em;
+    font-size: 0.9em; // originally 1em
   }
 }
 
 /* toc */
 .toc__menu {
-  font-size: $type-size-5;
+  font-size: $type-size-5; // originally type-size-6
 
   @include breakpoint($large) {
-    font-size: $type-size-6;
+    font-size: $type-size-6; // originally type-size-7
   }
 }
 
