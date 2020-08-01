@@ -4,23 +4,16 @@ layout: archive
 
 {{ content }}
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent posts" }}</h3>
+{%- if paginator %}
+  {%- assign posts = paginator.posts %}
+{%- else %}
+  {%- assign posts = site.posts %}
+{%- endif %}
+<div class="entries-{{ page.entries_layout | default: 'list' }}">
+  {% for p in posts %}
+    {% include menu-categories.html type=page.entries_layout %}
+  {% endfor %}
+</div>
 
-{%- for p in site.posts limit:1 %}
-  {% include menu-categories.html %}
-{%- endfor %}
-
-{%- for p in site.posts offset:1 limit:2 %}
-  {% include menu-categories.html %}
-{%- endfor %}
-
-<!-- <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Pages" }}</h3>
-
-{%- for p in site.pages limit:1 %}
-  {% include menu-categories.html %}
-{%- endfor %}
-
-{%- for p in site.pages offset:1 limit:2 %}
-  {% include menu-categories.html %}
-{%- endfor %}
--->
+{% include paginator.html %}
