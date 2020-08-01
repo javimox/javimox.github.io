@@ -7,6 +7,12 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+/* Added */
+@import "added/go-to-the-top"; // go to the top
+@import "added/menu-categories"; // automatically generated menu content
+
+/** 20020802 mox: change font size of body and code **/
+
 // https://github.com/mmistakes/minimal-mistakes/issues/1219#issuecomment-326809412
 html {
     font-size: 14px; // originally 16px
@@ -23,7 +29,7 @@ html {
     }
 }
 
-/* code */
+/* modifies: _base.scss */
 tt,
 code,
 kbd,
@@ -33,7 +39,7 @@ pre {
   font-size: 0.9em; // originally 1em
 }
 
-/* body */
+/* modifies: _page.scss */
 .page__content {
   p,
   li,
@@ -42,7 +48,9 @@ pre {
   }
 }
 
-/* toc */
+/** 200200802 mox: increased font of toc **/
+
+/* modifies: _navigation.scss */
 .toc__menu {
   font-size: $type-size-5; // originally type-size-6
 
@@ -51,3 +59,40 @@ pre {
   }
 }
 
+/** _old_ changes mox: top margin with the title decreased to 0em **/
+
+/* modifies: _archive.scss */
+.archive__subtitle {
+  margin: 1.414em 0 0em;
+}
+
+/* modifies: _navigation.scss */
+.greedy-nav {
+  .visible-links {
+    .dropdown {
+      float: left;
+      width: auto;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: darken($background-color, 1%);
+      min-width: 160px;
+      box-shadow: $box-shadow;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      padding: 4px 8px;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a:not(:last-child){
+      border-bottom: none;
+    }
+  }
+}
