@@ -3,7 +3,7 @@ title: "mox helm repository"
 excerpt: "mox helm repository homepage"
 permalink: /helm/
 date: 2020-04-17T23:54:20+02:00
-last_modified_at: 2020-04-28T00:21:27+02:00
+last_modified_at: 2020-08-03T03:11:31+02:00
 toc: true
 categories:
   - sysadmin
@@ -12,7 +12,7 @@ tags:
   - kubernetes
 ---
 
-[![](https://github.com/javimox/helm-charts/workflows/Release%20Charts/badge.svg?branch=master)](https://github.com/javimox/helm-charts/actions)
+![Lint and Test Charts](https://github.com/javimox/helm-charts/workflows/Lint%20and%20Test%20Charts/badge.svg) [![](https://github.com/javimox/helm-charts/workflows/Release%20Charts/badge.svg?branch=master)](https://github.com/javimox/helm-charts/actions) ![Latest Stable Versions](https://github.com/javimox/helm-charts/workflows/Latest%20Stable%20Versions/badge.svg)
 
 [*helm'd*](https://github.com/helm/helm) applications ready to be launched on [Kubernetes](https://kubernetes.io/).  
 Have fun!
@@ -31,62 +31,24 @@ $ helm install my-release mox/<chart>
 
 Helm Charts of `mox` repository are available on:
  * [helm.mox.sh](https://helm.mox.sh)
- * [hub.helm.sh](https://hub.helm.sh/charts/mox/jira-software)
- * [artifacthub.io](https://artifacthub.io/package/chart/mox/jira-software)
+ * [hub.helm.sh](https://hub.helm.sh/charts/mox)
+ * [artifacthub.io](https://artifacthub.io/packages/search?repo=mox)
+ * [hub.kubeapps.com](https://hub.kubeapps.com/charts/mox)
  
 If you find any errors, feel free to open an issue on [my GitHub](https://github.com/javimox/helm-charts/tree/master).
 
 ## Chart Sources
 
-* [charts/confluence-server](/helm/charts/confluence-server): Atlassian Confluence Server chart
-* [charts/jira-software](/helm/charts/jira-software): Atlassian Jira Software chart
+* `charts/confluence-server`: Atlassian Confluence Server chart @ [helm.mox.sh](https://mox.sh/helm/charts/confluence-server/)
+* `charts/jira-software`: Jira Software chart @ [helm.mox.sh](https://mox.sh/helm/charts/jira-software/)
 
-## How mox repo works
+## Do you want to add your charts? Feel free to:
 
-This repository uses Github actions. Before a chart can be added, it is linted and tested in a kind Kubernetes Cluster.  Following checks will run:
-
-* Chart-testing (lint)
-* Create kind cluster
-* Chart-testing (install)
-
-When all the check have passed, the PR will be confirmed and the index of this helm repository will be updated with its new content.
-
-### Actions
-
-* [@helm/kind-action](https://github.com/helm/kind-action)
-* [@helm/chart-testing-action](https://github.com/helm/chart-testing-action)
-* [@helm/chart-releaser-action](https://github.com/helm/chart-releaser-action)
-
-See [Results](#results) for more details.
-
-## Collaborate
-
-If you want to collaborate by adding your Helm charts to this repository, follow these steps:
-
-* Clone me: `git@github.com:javimox/helm-charts.git`
+* Fork this repository
 * Create a branch off master named after the chart
-* Commit and push origin the new branch
-* Create a Pull Request
+* Create a PR
 
-### <a name="results"></a>Results
+## About Helm
 
-* The [Lint and Test Charts](https://github.com/javimox/helm-charts/blob/master/.github/workflows/lint-test.yaml) workflow uses [@helm/kind-action](https://www.github.com/helm/kind-action) GitHub Action to spin up a [kind](https://kind.sigs.k8s.io/) Kubernetes cluster, and [@helm/chart-testing-action](https://www.github.com/helm/chart-testing-action) to lint and test the charts on every Pull Request and push
-  
-* The [Release Charts](https://github.com/javimox/helm-charts/blob/master/.github/workflows/release.yaml) workflow uses [@helm/chart-releaser-action](https://www.github.com/helm/chart-releaser-action) to turn this GitHub project into a self-hosted Helm chart repo. It does this – during every push to `master` – by checking each chart in this project, and whenever there's a new chart version, creates a corresponding [GitHub release](https://help.github.com/en/github/administering-a-repository/about-releases) named for the chart version, adds Helm chart artifacts to the release, and creates or updates an `index.yaml` file with metadata about those releases, which is then hosted on GitHub Pages
-
-## Credits
-
-* [Lint and Test Charts](https://github.com/helm/charts-repo-actions-demo.git)  
-
-## TODO
-
-Add mox repository to [hub.helm.sh](https://hub.helm.sh)
-
-## License
-
-Copyright (c) 2020 mox.sh
-
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
-
-http://www.apache.org/licenses/LICENSE-2.0
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+* [Quick Start guide](https://helm.sh/docs/intro/quickstart/)
+* [Using Helm Guide](https://helm.sh/docs/intro/using_helm/)
