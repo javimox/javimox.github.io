@@ -5,6 +5,8 @@ permalink: /helm/
 date: 2020-04-17T23:54:20+02:00
 last_modified_at: 2020-08-03T03:11:31+02:00
 toc: true
+toc_label: "Content"
+toc_sticky: true
 categories:
   - sysadmin
 tags:
@@ -40,6 +42,7 @@ If you find any errors, feel free to open an issue on [my GitHub](https://github
 ## Chart Sources
 
 * `charts/confluence-server`: Atlassian Confluence Server chart @ [helm.mox.sh](https://mox.sh/helm/charts/confluence-server/)
+* `charts/crowd`: Atlassian Crowd chart @ [helm.mox.sh](https://mox.sh/helm/charts/crowd/)
 * `charts/jira-software`: Jira Software chart @ [helm.mox.sh](https://mox.sh/helm/charts/jira-software/)
 
 ## Do you want to add your charts? Feel free to:

@@ -4,7 +4,9 @@ excerpt: "This chart bootstraps a Crowd Server deployment on a Kubernetes cluste
 permalink: /helm/charts/crowd/
 date: 2020-08-03T01:41:26+02:00
 last_modified_at: 2020-08-03T01:41:27+02:00
-classes: wide
+toc: true
+toc_label: "Content"
+toc_sticky: true
 categories:
   - sysadmin
 tags:
