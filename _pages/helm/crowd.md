@@ -36,9 +36,9 @@ This chart bootstraps a [Crowd server](https://hub.docker.com/r/atlassian/crowd/
 
 It is available on:
  * [helm.mox.sh](https://helm.mox.sh)
- * [hub.helm.sh](https://hub.helm.sh/charts/mox/jira-software)
- * [artifacthub.io](https://artifacthub.io/packages/helm/mox/jira-software)
- * [hub.kubeapps.com](https://hub.kubeapps.com/charts/mox/jira-software)
+ * [hub.helm.sh]( https://hub.helm.sh/charts/mox/crowd)
+ * [artifacthub.io](https://artifacthub.io/packages/helm/mox/crowd)
+ * [hub.kubeapps.com](https://hub.kubeapps.com/charts/mox/crowd)
 
 ## Prerequisites
 
