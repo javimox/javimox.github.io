@@ -2,6 +2,8 @@
 title: "mox helm repository"
 excerpt: "mox helm repository homepage"
 permalink: /helm/
+redirect_from:
+  - /charts/
 date: 2020-04-17T23:54:20+02:00
 last_modified_at: 2020-08-03T03:11:31+02:00
 toc: true
