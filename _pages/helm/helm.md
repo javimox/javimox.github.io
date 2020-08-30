@@ -5,7 +5,7 @@ permalink: /helm/
 redirect_from:
   - /charts/
 date: 2020-04-17T23:54:20+02:00
-last_modified_at: 2020-08-03T03:11:31+02:00
+last_modified_at: 2020-08-30T12:09:23+02:00
 toc: true
 toc_label: "Content"
 toc_sticky: true
@@ -16,7 +16,9 @@ tags:
   - kubernetes
 ---
 
-![Lint and Test Charts](https://github.com/javimox/helm-charts/workflows/Lint%20and%20Test%20Charts/badge.svg) [![](https://github.com/javimox/helm-charts/workflows/Release%20Charts/badge.svg?branch=master)](https://github.com/javimox/helm-charts/actions) ![Latest Stable Versions](https://github.com/javimox/helm-charts/workflows/Latest%20Stable%20Versions/badge.svg)
+![Lint and Test Charts](https://github.com/javimox/helm-charts/workflows/Lint%20and%20Test%20Charts/badge.svg)  
+[![](https://github.com/javimox/helm-charts/workflows/Release%20Charts/badge.svg?branch=master)](https://github.com/javimox/helm-charts/actions)  
+![Latest Stable Versions](https://github.com/javimox/helm-charts/workflows/Latest%20Stable%20Versions/badge.svg)
 
 [*helm'd*](https://github.com/helm/helm) applications ready to be launched on [Kubernetes](https://kubernetes.io/).  
 Have fun!
@@ -43,14 +45,18 @@ If you find any errors, feel free to open an issue on [my GitHub](https://github
 
 ## Chart Sources
 
-* `charts/confluence-server`: Atlassian Confluence Server chart @ [helm.mox.sh](https://mox.sh/helm/charts/confluence-server/)
-* `charts/crowd`: Atlassian Crowd chart @ [helm.mox.sh](https://mox.sh/helm/charts/crowd/)
-* `charts/jira-software`: Jira Software chart @ [helm.mox.sh](https://mox.sh/helm/charts/jira-software/)
+* `[charts/confluence-server]`: Atlassian Confluence Server chart. [mox.sh](https://mox.sh/helm/charts/confluence-server/) [github.com](https://github.com/javimox/helm-charts/tree/master/charts/confluence-server)
+* `[charts/crowd]`: Atlassian Crowd chart. [mox.sh](https://mox.sh/helm/charts/crowd/) [github.com](https://github.com/javimox/helm-charts/tree/master/charts/crowd)
+* `[charts/jira-software]`: Jira Software chart. [mox.sh](https://mox.sh/helm/charts/jira-software/) [github.com](https://github.com/javimox/helm-charts/tree/master/charts/jira-software)
 
-## Do you want to add your charts? Feel free to:
+## Contribute
+
+Contributions are welcome! If you have any issue deploying these charts or a enhancement feature, feel free to open an issue on [my GitHub](https://github.com/javimox/helm-charts/tree/master).
+
+If you want to add your Charts to the **mox** repository or modify those that are available, you are welcome to:
 
 * Fork this repository
-* Create a branch off master named after the chart
+* Create a branch off master named after your chart
 * Create a PR
 
 ## About Helm
