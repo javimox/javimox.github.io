@@ -10,15 +10,13 @@ date: 2020-09-12T21:06:59+02:00
 last_modified_at: 2020-09-12T22:16:59+02:00
 ---
 
-## Introduction
-
 Here you can find what helped me to pass the exam **ACP-600 Project Administration in Jira Server** a couple of days ago.  I hope it helps you too.
 
 Feel free to leave a comment about your experience with the ACP-600 or any other Atlassian certification.
 
 And as a recommendation I do think it works to do what I did and look for the answers yourself in the Atlassian documentation and write them down, as well as doing the labs! But in case you can't find something, here is all the information to the points in the section "**Important concepts to master**" from the Exam Topics.
 
-Check out the Part II about the labs [here](https://mox.sh/).
+There is also a Part two of this guide with information about the Jira labs [here](https://mox.sh/sysadmin/acp-600-labs/).
 
 Atlassian links:
 * [Atlassian ACP-600 Website Information](https://www.atlassian.com/university/certification/certifications/exam-acp-600)
