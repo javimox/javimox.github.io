@@ -1,5 +1,5 @@
 ---
-title:  "ACP-600 Project Administration in Jira Server: Concepts to master"
+title:  "Preparing ACP-600 Project Administration in Jira Server: Part I Concepts to master"
 toc_sticky: false
 categories:
   - sysadmin
@@ -18,7 +18,7 @@ Feel free to leave a comment about your experience with the ACP-600 or any other
 
 And as a recommendation I do think it works to do what I did and look for the answers yourself in the Atlassian documentation and write them down, as well as doing the labs! But in case you can't find something, here is all the information to the points in the section "**Important concepts to master**" from the Exam Topics.
 
-I will publish some information about my experience doing the labs soon, too.
+Check out the Part II about the labs [here](https://mox.sh/).
 
 Atlassian links:
 * [Atlassian ACP-600 Website Information](https://www.atlassian.com/university/certification/certifications/exam-acp-600)
