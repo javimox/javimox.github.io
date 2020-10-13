@@ -3,7 +3,7 @@ title: "confluence-server"
 excerpt: "This chart bootstraps a Confluence Server deployment on a Kubernetes cluster"
 permalink: /helm/charts/confluence-server/
 date: 2020-04-18T00:28:29+02:00
-last_modified_at: 2020-09-29T10:03:15+02:00
+last_modified_at: 2020-10-13T10:02:48+02:00
 toc: true
 toc_label: "Content"
 toc_sticky: true
@@ -370,7 +370,7 @@ $ helm upgrade --install my-release \
 
 ## <a name="values_values-prod-diff"></a>Difference between values and values-production
 
-Chart Version 1.0.3
+Chart Version 1.0.4
 ```diff
 --- confluence-server/values.yaml
 +++ confluence-server/values-production.yaml
