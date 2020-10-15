@@ -1,0 +1,70 @@
+==================================================================
+https://keybase.io/javimox
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://mox.sh
+  * I am javimox (https://keybase.io/javimox) on keybase.
+  * I have a public key with fingerprint F770 1DC0 15C3 29BB 8BA4  AB93 B9A0 6DBB 5B3F D051
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "010126efcd7c3b1301051d54485163947de3a1d695c764aca066071d4b5eda3f80ff0a",
+      "fingerprint": "f7701dc015c329bb8ba4ab93b9a06dbb5b3fd051",
+      "host": "keybase.io",
+      "key_id": "b9a06dbb5b3fd051",
+      "kid": "010126efcd7c3b1301051d54485163947de3a1d695c764aca066071d4b5eda3f80ff0a",
+      "uid": "f7d0c00494381d98feaa13c16ae47519",
+      "username": "javimox"
+    },
+    "service": {
+      "hostname": "mox.sh",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1602795682,
+  "expire_in": 157680000,
+  "prev": "24478cbac4f167e7e7552172190d79c5a8e1a08d4b7b0fbe4af0835201cc1547",
+  "seqno": 3,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtUmtsFFUY3aVrut1aRBLapKXKDpraR+Deec8SBQ1qCGqhIG1U3Nw7c6cd2c4s
+O0u7sFlFjbEt5SVGo1ZtxaaGUlw0Ji2kpj7QrbRoFCiVWl4iVM3GVkOVlOKdBv75
+0/vn5p57zvnO9+XblZPh8rp7WmsPP7n0u9Xuo2PYFWzo3h9nsKVtZgJxZgOZuUhI
+I3Y0uMHQmAADIICsSHRVk1QOQ46+BagJPC8LUOQUXtIIh6AmKoIqiTxSERBFIEGN
+xwLREKfLQNcBYsoY3TCrSSQcMcwotdUlCUBNBVBQOVbBWMaIR1jhsEINNIwFzOka
+rUSFNZbtKGg4jGyyyLAoRh/BmXj/wf+fc2+asdMlDagA8ArPyVBTZJ0gBDkViojw
+kgAVh2iTiIlqCWU/g+qMWivGJMoYCtYZKnHm6jRyg0A/F9k1VBSOWFFLtUIUq4lG
+w3bA0UQ3hx1SPcHBG/IgNkyNDpAq6kjENiyTCUDKVKOG4wdFwEqKIMpsGUNiYSNC
+gobDECRRBvQ4dUgdtWR5XpJVjFReh6K0mkhEEgQWSixUgCYpqoBkAhGQ6RgkDHRM
+eKQDmRNYAFUVCrzEOB1tNC0mwNGcqJp62ka1iaKbIoRJ+BrdH3tcbq+rMNfvmQwX
+9s37ovjwtvc799xcultmORvn8mXNuYm8cDl7+l5r6I/MTD15Ma52NX/SNjB87khG
+3qmWde9M/fbodU9Xww9ZfS2/Dj3XfKn9Kko+ONr2e1bq0MSqr16znt7zcunOM63H
+fd/mq4Nr/jK3xLZ8npn+9PHyfVd2DO671X9GO9+bHjpdeXJ5ML89e7mraNuX40UL
+dvmeHxhNTv5onsgp712vVq3did+rb00UT478PPx3/1hpo+tYM7umtOGj6VRT4Nhj
+Pe+++Qp8IHGnPWcJGPCWjDyx+OSU/6Ul8j87kjXpoPBIQ8XDE2O/hNr2hmd909+x
+dDxv6IOHDtwXqtq6sbxi/dmmC29len8yesdml8zPSRWkDe9s0DiduJ4fPzhawH9v
+nX+j845rB26v9DMXM0bA/uRWvP3uYTY37/WSvrn9K5vWnc0+8nX+0bD5GX/67RX3
+lP45PnfZ7s4XR0+kdt+WW/xsR+jV9NUFiztqr61qvzBvpX/h/QXtawsquutbCs8d
+d1156kOIp3qWVfXFFnrc3VWHTk3EigeJh+1KTe69q6hyvi9esr0y5+C/
+=mpIx
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/javimox
+
+==================================================================
+
