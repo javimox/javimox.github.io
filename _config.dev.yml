@@ -66,10 +66,13 @@ author:
   links:
     - label: "E-mail"
       icon: "fas fa-fw fa-at"
-      url: "mailto:jmox@protonmail.com"
+      url: "mailto:jmox@pm.me"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/javimox"
+    - label: "Keybase"
+      icon: "fab fa-fw fa-keybase"
+      url: "https://keybase.io/javimox"
 
 # Site Footer
 footer:
