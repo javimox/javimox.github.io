@@ -3,7 +3,7 @@ title: "jira-software"
 excerpt: "This chart bootstraps a Jira Software deployment on a Kubernetes cluster"
 permalink: /helm/charts/jira-software/
 date: 2020-04-18T00:28:29+02:00
-last_modified_at: 2020-12-02T12:48:51+02:00
+last_modified_at: 2020-12-02T13:07:05+02:00
 toc: true
 toc_label: "Content"
 toc_sticky: true
