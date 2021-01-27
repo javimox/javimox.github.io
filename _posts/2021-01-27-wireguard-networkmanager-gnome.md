@@ -16,9 +16,9 @@ Almost a year after being incorporated as a module in the linux kernel, this vpn
 
 So far it's all praise. The only thing that I am still not used to is the stateless connections that Wireguard has by design. It means that we won't have logging, peer connection status, etc.
 
-That's why I ended up installing a plugin for NetworkManager in GNOME. I can now use NetworkManager to connect/disconnect the VPN from the client-side, as I do with OpenVPN.
+I was also missing some sort of integration with NetworkManager. That's why I ended up installing a plugin for NetworkManager in GNOME. I can now connect/disconnect the VPN, as I do with OpenVPN.
 
-Thanks to the [network-manager-wireguard](https://github.com/max-moser/network-manager-wireguard) repository is pretty easy to achieve. This is basically how I did it on Debian Buster:
+Thanks to the [network-manager-wireguard](https://github.com/max-moser/network-manager-wireguard) repository it's pretty easy to achieve. This is basically how I did it on Debian Buster:
 
 ```
 $ sudo apt install build-essential libgtk-3-dev libnma-dev libsecret-1-dev
@@ -38,7 +38,12 @@ Build configuration:
   --enable-ld-gc=yes
 
 
-$ ./configure --prefix=/usr --without-libnm-glib --sysconfdir=/etc --libdir=/usr/lib/x86_64-linux-gnu --libexecdir=/usr/lib/NetworkManager --localstatedir=/var
+$ ./configure --prefix=/usr \
+              --without-libnm-glib \
+              --sysconfdir=/etc \
+              --libdir=/usr/lib/x86_64-linux-gnu \
+              --libexecdir=/usr/lib/NetworkManager \
+              --localstatedir=/var
 
 $ make   
 $ sudo make install
@@ -53,3 +58,5 @@ The configuration itself is very simple, and not all fields are required. The on
 
 ![Wireguard Config](/assets/images/wireguard-networkmanager-config.png)
 
+
+Enjoy!
