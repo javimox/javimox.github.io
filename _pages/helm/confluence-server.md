@@ -3,7 +3,7 @@ title: "confluence-server"
 excerpt: "This chart bootstraps a Confluence Server deployment on a Kubernetes cluster"
 permalink: /helm/charts/confluence-server/
 date: 2020-04-18T00:28:29+02:00
-last_modified_at: 2020-12-10T09:03:11+02:00
+last_modified_at: 2021-02-24T23:20:39+02:00
 toc: true
 toc_label: "Content"
 toc_sticky: true
@@ -182,6 +182,7 @@ By default a PostgreSQL will be deployed and a user and a database will be creat
 | `databaseConnection.lang`                | Encoding used for lc_ctype and lc_collate in case the database needs to be created       | `C`                          |
 | `databaseConnection.port`                | Confluence database server port                                                          | `5432`                       |
 | `databaseConnection.type`                | Confluence database server type                                                          | `postgresql`                 |
+| `databaseConnection.jdbcUrl`             | Override JDBC URL                                                                        | `nil`      `                 |
 | `databaseDrop.enabled`                   | Enable database removal. See [remove existing database](#remove-existing-database)       | `false`                      |
 | `databaseDrop.dropIt`                    | Confirm database removal if set to `yes`                                                 | `no`                         |
 
@@ -372,7 +373,7 @@ $ helm upgrade --install my-release \
 
 ## <a name="values_values-prod-diff"></a>Difference between values and values-production
 
-Chart Version 2.0.4
+Chart Version 2.0.5
 ```diff
 --- confluence-server/values.yaml
 +++ confluence-server/values-production.yaml
