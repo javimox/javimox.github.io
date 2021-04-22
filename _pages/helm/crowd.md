@@ -3,7 +3,7 @@ title: "crowd"
 excerpt: "This chart bootstraps a Crowd Server deployment on a Kubernetes cluster"
 permalink: /helm/charts/crowd/
 date: 2020-08-03T01:41:26+02:00
-last_modified_at: 2021-02-23T09:02:41+02:00
+last_modified_at: 2021-04-22T10:10:38+02:00
 toc: true
 toc_label: "Content"
 toc_sticky: true
@@ -367,7 +367,7 @@ $ helm upgrade --install my-release \
 
 ## <a name="values_values-prod-diff"></a>Difference between values and values-production
 
-Chart Version 2.0.4
+Chart Version 2.0.5
 ```diff
 --- crowd/values.yaml
 +++ crowd/values-production.yaml
