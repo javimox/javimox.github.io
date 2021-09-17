@@ -3,7 +3,7 @@ title: "confluence-server"
 excerpt: "This chart bootstraps a Confluence Server deployment on a Kubernetes cluster"
 permalink: /helm/charts/confluence-server/
 date: 2020-04-18T00:28:29+02:00
-last_modified_at: 2021-03-23T18:28:11+02:00
+last_modified_at: 2021-09-17T14:52:20+02:00
 toc: true
 toc_label: "Content"
 toc_sticky: true
@@ -196,6 +196,7 @@ By default a PostgreSQL will be deployed and a user and a database will be creat
 | `nodeSelector`                       | Node labels for pod assignment                                                            | `{}`                          |
 | `tolerations`                        | List of node taints to tolerate                                                           | `[]`                          |
 | `affinity`                           | Map of node/pod affinity labels                                                           | `{}`                          |
+| `priorityClassName`                  | Pod priority class name                                                                   | `nil`                         |
 | `podAnnotations`                     | Map of annotations to add to the pods                                                     | `{}`                          |
 | `podLabels`                          | Map of labels to add to the pods                                                          | `{}`                          |
 | `extraVolumeMounts`                  | Additional volume mounts to add to the pods                                               | `[]`                          |
