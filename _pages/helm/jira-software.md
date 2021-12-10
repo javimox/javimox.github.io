@@ -3,7 +3,7 @@ title: "jira-software"
 excerpt: "This chart bootstraps a Jira Software deployment on a Kubernetes cluster"
 permalink: /helm/charts/jira-software/
 date: 2020-04-18T00:28:29+02:00
-last_modified_at: 2021-11-18T09:03:39+02:00
+last_modified_at: 2021-12-10T09:04:58+02:00
 toc: true
 toc_label: "Content"
 toc_sticky: true
@@ -366,7 +366,7 @@ If `databaseDrop.enabled` is set to `true` and `databaseDrop.dropIt` is set to `
 
 ## <a name="values_values-prod-diff"></a>Difference between values and values-production
 
-Chart Version 2.1.7
+Chart Version 2.1.8
 ```diff
 --- jira-software/values.yaml
 +++ jira-software/values-production.yaml
