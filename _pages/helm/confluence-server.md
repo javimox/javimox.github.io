@@ -3,7 +3,7 @@ title: "confluence-server"
 excerpt: "This chart bootstraps a Confluence Server deployment on a Kubernetes cluster"
 permalink: /helm/charts/confluence-server/
 date: 2020-04-18T00:28:29+02:00
-last_modified_at: 2021-09-17T14:52:20+02:00
+last_modified_at: 2022-04-26T10:14:52+02:00
 toc: true
 toc_label: "Content"
 toc_sticky: true
