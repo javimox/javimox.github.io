@@ -3,7 +3,7 @@ title: "confluence-server"
 excerpt: "This chart bootstraps a Confluence Server deployment on a Kubernetes cluster"
 permalink: /helm/charts/confluence-server/
 date: 2020-04-18T00:28:29+02:00
-last_modified_at: 2022-04-26T10:14:52+02:00
+last_modified_at: 2023-08-23T21:24:28+02:00
 toc: true
 toc_label: "Content"
 toc_sticky: true
@@ -192,6 +192,7 @@ By default a PostgreSQL will be deployed and a user and a database will be creat
 |--------------------------------------|-------------------------------------------------------------------------------------------|-------------------------------|
 | `replicaCount`                       | Number of replicas for this deployment                                                    | `1`                           |
 | `securityContext`                    | Container security context options                                                        | `{}`                          |
+| `hostAliases`                        | Host aliases that are added to the pods                                                   | `[]`                          |
 | `resources`                          | CPU/Memory resource requests/limits                                                       | Memory: `1Gi`, CPU: `500m`    |
 | `nodeSelector`                       | Node labels for pod assignment                                                            | `{}`                          |
 | `tolerations`                        | List of node taints to tolerate                                                           | `[]`                          |
@@ -375,7 +376,8 @@ $ helm upgrade --install my-release \
 
 ## <a name="values_values-prod-diff"></a>Difference between values and values-production
 
-Chart Version 2.0.5
+Chart Version 3.7.0
+
 ```diff
 --- confluence-server/values.yaml
 +++ confluence-server/values-production.yaml
